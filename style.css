@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Header Starts here*/
+/* Navbar */
+
+.navbar {
+    display: flex;
+    background-color: brown;
+    height: 45px;
+    color: white;
+    font-family: 'Ubantu', sans-serif;
+}
+
+.navbar ul li {
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+/* Header Ends here */
+
+/* Tags */
+
+.list {
+    background-color: rgb(131, 69, 69);
+}
+
+.list ul li {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.list ul li a {
+    color: yellow;
+}
+
+/* main starts here */
+
+main h1 {
+    margin: 40px 0;
+    font-size: 3rem;
+    color: brown;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 5px;
+}
+
+main p {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+/* section 1 */
+
+.section {
+    min-height: 50vh;
+}
+
+.card {
+    max-width: 25rem;
+    min-height: 20vh;
+    padding: 5px;
+    border: 2px solid brown;
+    border-radius: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.card img {
+    width: 24.5rem;
+    height: 25vh;
+    margin-left: -2px;
+    margin-top: -3px;
+    border-radius: 5px;
+}
+
+.card h2 {
+    padding: 5px 0px;
+}
+
+/* Header Ends here */
+
+/* footer starts here*/
+
+footer div {
+    background: brown;
+    color: white;
+    font-weight: bold;
+    margin-top: 22px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* footer Ends here */
+
+/* meadia query */
+
+@media screen and (min-width: 5px) and (max-width: 430px) {
+    .cards {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+        width: 18rem;
+    }
+
+    .card img {
+        width: 17.5rem;
+    }
+
+    .navbar {
+        display: block;
+        height: 21vw;
+    }
+
+    .navbar ul li {
+        margin: 5px auto;
+    }
+
+    .navbar h1 {
+        text-align: center;
+        padding: 5px 0;
+    }
+}
+
+/* For tag list */
+
+@media screen and (min-width: 316px) and (max-width: 370px) {
+    .list ul li {
+        font-size: 15px;
+        padding: 10px 8px;
+    }
+}
